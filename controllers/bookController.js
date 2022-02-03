@@ -19,3 +19,9 @@ exports.getBooks = async (req, res) => {
 	}	
 
 }
+
+exports.createBooks = async (req, res) => {
+	
+	return res.render("books/create")
+
+}
