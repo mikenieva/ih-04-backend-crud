@@ -18,6 +18,7 @@ app.use(express.static("public"))
 app.set("views", __dirname + "/views")
 app.set("view engine", "hbs")
 
+app.use(express.urlencoded({ extended: true }))
 
  
 // 3. RUTEO

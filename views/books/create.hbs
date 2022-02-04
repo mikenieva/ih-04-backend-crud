@@ -1,9 +1,10 @@
 {{!-- ./views/books/create.hbs --}}
 
-
 <h2>Crear libro</h2>
 
-<form action="/books/create" method="post">
+{{!-- EL ACTION APUNTA AL .POST DEL RUTEO --}}
+<form action="/books/create" method="POST">
+  
   <label> Title:
     <input type="text" name="title" />
   </label>
