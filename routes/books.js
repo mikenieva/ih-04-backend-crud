@@ -19,5 +19,14 @@ router.post("/create", bookController.createBooksForm)
 // http://localhost:3005/books/1357968416316574654654
 router.get("/:bookID", bookController.getSingleBook)
 
+// CREAR PÁGINA PARA EDITAR FORMULARIO
+router.get("/:bookID/edit", bookController.editBook)
+
+// ENVIAR DATOS DE FORMULARIO PARA EDITAR LIBRO EN BD
+router.post("/:bookID/edit", bookController.editBookForm)
+
+// BORRAR LIBRO
+router.post("/:bookID/delete", bookController.deleteBook)
+
 
 module.exports = router
